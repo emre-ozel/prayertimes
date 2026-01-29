@@ -1,0 +1,16 @@
+# Compiled GSettings schemas (users compile locally)
+schemas/gschemas.compiled
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package output
+*.zip

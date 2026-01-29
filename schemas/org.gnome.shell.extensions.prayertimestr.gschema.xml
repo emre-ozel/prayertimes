@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="prayertimestr">
+    <schema id="org.gnome.shell.extensions.prayertimestr" path="/org/gnome/shell/extensions/prayertimestr/">
+        
+        <!-- Location Settings -->
+        <key name="auto-location" type="b">
+            <default>true</default>
+            <summary>Automatic Location Detection</summary>
+            <description>Use IP-based geolocation to detect location automatically</description>
+        </key>
+        
+        <key name="latitude" type="d">
+            <default>41.0082</default>
+            <summary>Latitude</summary>
+            <description>Manual latitude coordinate (default: Istanbul)</description>
+        </key>
+        
+        <key name="longitude" type="d">
+            <default>28.9784</default>
+            <summary>Longitude</summary>
+            <description>Manual longitude coordinate (default: Istanbul)</description>
+        </key>
+        
+        <key name="detected-latitude" type="d">
+            <default>0.0</default>
+            <summary>Detected Latitude</summary>
+            <description>Automatically detected latitude from GeoIP</description>
+        </key>
+        
+        <key name="detected-longitude" type="d">
+            <default>0.0</default>
+            <summary>Detected Longitude</summary>
+            <description>Automatically detected longitude from GeoIP</description>
+        </key>
+        
+        <key name="detected-city" type="s">
+            <default>''</default>
+            <summary>Detected City</summary>
+            <description>City name from automatic detection</description>
+        </key>
+        
+        <!-- Notification Settings -->
+        <key name="reminder-minutes" type="i">
+            <default>30</default>
+            <summary>Reminder Time (minutes)</summary>
+            <description>Send a reminder notification X minutes before prayer time</description>
+        </key>
+        
+        <key name="notifications-enabled" type="b">
+            <default>true</default>
+            <summary>Enable Notifications</summary>
+            <description>Enable prayer time notifications</description>
+        </key>
+        
+        <key name="reminder-enabled" type="b">
+            <default>true</default>
+            <summary>Enable Reminder</summary>
+            <description>Enable pre-prayer reminder notifications</description>
+        </key>
+        
+        <!-- Language Setting -->
+        <key name="language" type="s">
+            <default>'tr'</default>
+            <summary>Language</summary>
+            <description>Display language: tr (Turkish), en (English), de (German), ar (Arabic)</description>
+        </key>
+        
+        <!-- Calculation Method -->
+        <key name="calculation-method" type="i">
+            <default>13</default>
+            <summary>Calculation Method</summary>
+            <description>Prayer time calculation method (13 = Diyanet/Turkey)</description>
+        </key>
+        
+        <!-- Cache -->
+        <key name="cached-times" type="s">
+            <default>'{}'</default>
+            <summary>Cached Prayer Times</summary>
+            <description>JSON string of cached prayer times for offline use</description>
+        </key>
+        
+        <key name="last-fetch-date" type="s">
+            <default>''</default>
+            <summary>Last Fetch Date</summary>
+            <description>Date of last successful API fetch</description>
+        </key>
+        
+    </schema>
+</schemalist>
