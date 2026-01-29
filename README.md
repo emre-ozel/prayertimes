@@ -21,8 +21,6 @@ A GNOME Shell extension that displays Islamic prayer times in the top panel with
 
 ![Panel indicator showing next prayer and countdown](Screenshot.png)
 
-*Panel indicator showing next prayer and countdown*
-
 ## Requirements
 
 - GNOME Shell 45 or later
