@@ -6,7 +6,7 @@
 import GObject from 'gi://GObject';
 import GLib from 'gi://GLib';
 import Gio from 'gi://Gio';
-import Soup from 'gi://Soup?version=3.0';
+import Soup from 'gi://Soup';
 import St from 'gi://St';
 import Clutter from 'gi://Clutter';
 
@@ -544,6 +544,7 @@ const PrayerTimesIndicator = GObject.registerClass(
             }
 
             if (this._httpSession) {
+                this._httpSession.abort();
                 this._httpSession = null;
             }
 

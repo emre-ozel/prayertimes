@@ -1,6 +1,6 @@
 {
     "name": "Prayer Times",
-    "description": "Display Islamic prayer times with notifications. Uses Diyanet calculation method by default. Supports automatic location detection and manual coordinates.",
+    "description": "Display Islamic prayer times with notifications. Uses Diyanet calculation method by default. Supports automatic location detection and manual coordinates. This extension uses ip-api.com for geolocation and aladhan.com for prayer times data.",
     "uuid": "prayertimestr@emre.dev",
     "version": 1,
     "shell-version": [
